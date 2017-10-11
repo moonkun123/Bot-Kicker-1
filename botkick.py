@@ -162,9 +162,6 @@ Ingat ")
                     sendMessage(msg.to, "%sseconds" % (elapsed_time))
 				
 		if msg.text == "Moon","Mun","":
-                    start = time.time()
-                    sendMessage(msg.to, "Speed~~")
-                    elapsed_time = time.time() - start
                     sendMessage(msg.to,"Iya ada apa.displayname ?")
 #-------------------------------------------------------------		
         else:
