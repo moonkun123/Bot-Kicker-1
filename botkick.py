@@ -153,7 +153,7 @@ def SEND_MESSAGE(op):
                     elapsed_time = time.time() - start
                     sendMessage(msg.to, "%sseconds" % (elapsed_time))
 				
-		if msg.text == "Moon","Mun":
+		if msg.text == "Mun":
                     sendMessage(msg.to,"Iya ada apa.displayname ?")
 #-------------------------------------------------------------		
         else:
