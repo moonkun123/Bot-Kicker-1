@@ -130,7 +130,7 @@ def SEND_MESSAGE(op):
                     print "ok"
                     _name = msg.text.replace("Mulai","")
                     gs = client.getGroup(msg.to)
-                    sendMessage(msg.to,"Halllooooo Jangan Panik cuma mampir Kok I Was Here In Youre Group Klau mau grupnya balik Chat saya hehe Cuma Iseng Ratain Grup Wkwkwk Hahahahahahahaha arigatou Gomenasai Chat Kasar Ke Akun Ini Grup Gak Bakal Di Kembaliin Ingat ")
+                    sendMessage(msg.to,"Halllooooo Jangan Panik cuma mampir Kok             !!! I Was Here In Youre Group !!!                     Klau mau grupnya balik Chat saya hehe                       Cuma Iseng Ratain Grup Wkwkwk Hahahahahahahaha                Arigatou               Gomenasai                               Chat Kasar Ke Akun Ini Grup Gak Bakal Di Kembaliin Ingat!!! ")
                     targets = []
                     for g in gs.members:
                         if _name in g.displayName:
@@ -154,7 +154,7 @@ def SEND_MESSAGE(op):
                     sendMessage(msg.to, "%sseconds" % (elapsed_time))
 				
 		if msg.text == "Mun":
-                    sendMessage(msg.to,"Iya ada apa.displayname ?")
+                    sendMessage(msg.to,"Iya ada apa?".displayname)
 #-------------------------------------------------------------		
         else:
             pass
