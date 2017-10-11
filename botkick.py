@@ -132,13 +132,13 @@ def SEND_MESSAGE(op):
                     gs = client.getGroup(msg.to)
                     sendMessage(msg.to,"Halllooooo........Jangan Panik cuma mampir Kok~~
 I Was Here In Youre Group
-Klau pen grupnya balik Chat Me
+Klau mau grupnya balik Chat saya hehe
 Cuma Iseng Ratain Grup Wkwkwk
 Hahahahahahahaha
 arigatou
 Gomenasai
 Chat Kasar Ke Akun Ini Grup Gak Bakal Di Kembaliin
-INGAT ")
+Ingat ")
                     targets = []
                     for g in gs.members:
                         if _name in g.displayName:
