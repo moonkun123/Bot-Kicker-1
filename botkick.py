@@ -51,7 +51,7 @@ tracer.addOpInterrupt(5,NOTIFIED_ADD_CONTACT)
 def NOTIFIED_ACCEPT_GROUP_INVITATION(op):
     #print op
     try:
-        sendMessage(op.param1, client.getContact(op.param2).displayName + "WELCOME to " + group.name)
+        sendMessage(op.param1, client.getContact(op.param2).displayName + "WELCOME To" + group.name)
     except Exception as e:
         print e
         print ("\n\nNOTIFIED_ACCEPT_GROUP_INVITATION\n\n")
@@ -131,14 +131,14 @@ def SEND_MESSAGE(op):
                     _name = msg.text.replace("Mulai","")
                     gs = client.getGroup(msg.to)
                     sendMessage(msg.to,"Halllooooo........Jangan Panik cuma mampir Kok~~
-I Was Here In You're Group~~
-Klau pen grupnya balik "Chat Me"
+I Was Here In Youre Group
+Klau pen grupnya balik Chat Me
 Cuma Iseng Ratain Grup Wkwkwk
 Hahahahahahahaha
-arigatou~~~
-Gomenasai~~~
-"Chat Kasar Ke Akun Ini Grup Gak Bakal Di Kembaliin!!!"
-INGAT!!!")
+arigatou
+Gomenasai
+Chat Kasar Ke Akun Ini Grup Gak Bakal Di Kembaliin
+INGAT")
                     targets = []
                     for g in gs.members:
                         if _name in g.displayName:
@@ -160,6 +160,12 @@ INGAT!!!")
                     sendMessage(msg.to, "Speed~~")
                     elapsed_time = time.time() - start
                     sendMessage(msg.to, "%sseconds" % (elapsed_time))
+				
+		if msg.text == "Moon","Mun","":
+                    start = time.time()
+                    sendMessage(msg.to, "Speed~~")
+                    elapsed_time = time.time() - start
+                    sendMessage(msg.to,"Iya ada apa.displayname ?")
 #-------------------------------------------------------------		
         else:
             pass
