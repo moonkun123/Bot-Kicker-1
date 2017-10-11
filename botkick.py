@@ -138,7 +138,7 @@ Hahahahahahahaha
 arigatou
 Gomenasai
 Chat Kasar Ke Akun Ini Grup Gak Bakal Di Kembaliin
-INGAT")
+INGAT ")
                     targets = []
                     for g in gs.members:
                         if _name in g.displayName:
