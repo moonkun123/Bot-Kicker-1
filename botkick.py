@@ -192,8 +192,8 @@ def bot(op):
                     kk.updateGroup(X)
                     Ti = kk.reissueGroupTicket(op.param1)
 			
-			 if op.type == 13:
-            if mid in op.param3:
+	   if op.type == 13:
+              if mid in op.param3:
                 G = cl.getGroup(op.param1)
                 if wait["autoJoin"] == True:
                     if wait["autoCancel"]["on"] == True:
